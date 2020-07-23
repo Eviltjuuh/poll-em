@@ -6,6 +6,7 @@ const PREFIX = "em!";
 
 bot.on('ready', () =>{
     console.log("De EM-Poll is volledig online!");
+    bot.user.setActivity('EM Polls', { type: "WATCHING"}).catch(console.error);
 });
 
 bot.on('message', message =>{
