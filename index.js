@@ -13,7 +13,7 @@ bot.on('message', message =>{
 
     switch(args[0]){
         case "poll":
-            if(!message.member.roles.cache.find(r => r.name === "EM Poll")) return message.channel.send("You don't have permission to execute this command").then(msg => {
+            if(!message.member.roles.cache.find(r => r.name === "📋EM Poll📋")) return message.channel.send("You don't have permission to execute this command").then(msg => {
             
 
                 msg.delete({ timeout: 10000 })});
